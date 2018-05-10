@@ -9,7 +9,7 @@ class MP3Importer
   def files
     @files = Dir.entries(@path)
     @files.select{|file| file.include?(".mp3")}
-    #binding.pry
+    binding.pry
   end
 
   def import
